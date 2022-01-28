@@ -8,10 +8,16 @@ iTermocil supports iTerm 2.x and the new 3.x (including later betas). It works b
 
 ## Installing iTermocil
 
+In order to install this version of itermocil, you have to add my homebrew brews
+formulas to your registry. Here are the commands to do so and install this:
+
 ```bash
 # Install `itermocil` via Homebrew
 $ brew update
-$ brew install TomAnthony/brews/itermocil
+$ mkdir -p /opt/homeberw/Library/Taps/keyboard-clacker
+$ git clone https://github.com/keyboard-clacker/homebrew-brews /opt/homeberw/Library/Taps/keyboard-clacker/homebrew-brews
+$ brew update
+$ brew install keyboard-clacker/brews/itermocil
 
 # Create your layout directory
 $ mkdir ~/.itermocil
